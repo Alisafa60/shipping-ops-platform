@@ -8,7 +8,9 @@ Built for shipping and operations teams that rely on Excel-heavy workflows but n
 
 ## Demo
 
-[Watch the 2-minute demo](./assets/demo.mp4)
+![Demo Preview](./assets/preview.gif)
+
+[Watch full demo](./assets/demo.mp4)
 
 ---
 
