@@ -170,6 +170,10 @@ Client access is intentionally constrained and focused on shipment and invoice v
 
 ## Architecture Notes
 
+The backend is built with Ktor, a lightweight and non-opinionated framework in the JVM ecosystem that gives explicit control over routing, middleware, authentication, serialization, and application structure.
+
+The project favors explicit configuration and composable infrastructure over heavy framework abstraction, shaping much of the authentication, session, import, and operational workflow architecture.
+
 The backend is organized around controllers, services, repositories, models, and configuration modules.
 
 The frontend is organized around route pages, domain components, API services, query hooks, shared layout, theming, and localization utilities.
