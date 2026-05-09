@@ -1,8 +1,8 @@
 # Shipping Ops Platform
 
-A self-hosted shipping company operations platform for shipment tracking, stock workflows, invoicing, payments, role-based access control, and spreadsheet-based imports.
+A self-hosted shipping company operations platform for shipment tracking, stock workflows, invoicing, payments, role-based access control, and configurable Excel imports.
 
-Built for shipping and operations teams that still rely heavily on spreadsheets but need stronger process control, inventory visibility, and internal governance.
+Built for shipping teams that still rely heavily on spreadsheets but need a centralized system for daily operations: shipments, inventory, invoices, payments, employee tasks, client visibility, and internal governance.
 
 ---
 
