@@ -2,29 +2,34 @@
 
 A self-hosted shipping company operations platform for shipment tracking, stock workflows, invoicing, payments, role-based access control, and spreadsheet-based imports.
 
-Built for shipping and operations teams that rely on Excel-heavy workflows but need stronger process control, financial visibility, and internal governance.
+Built for shipping and operations teams that still rely heavily on spreadsheets but need stronger process control, inventory visibility, and internal governance.
 
 ---
 
 ## Demo
 
-![Preview](./assets/preview.gif)
+<p align="center">
+  <img src="./assets/preview.gif" width="100%" />
+</p>
 
-[Watch Full 2-Minute Demo](./assets/demo.mp4)
+<p align="center">
+  <a href="./assets/demo.mp4">Watch Full 2-Minute Demo</a>
+</p>
+
 ---
 
 ## Highlights
 
 - Shipment lifecycle tracking
-- Loaded, transit, and in-stock item views
-- Configurable Excel import workflow
+- Loaded, transit, and in-stock inventory workflows
+- Configurable Excel import pipeline with validation and embedded image extraction
 - Client and supplier invoice management
 - Multi-currency financial calculations
 - Payments and refunds
 - Role-aware dashboards
 - Persistent access-control matrix
-- Audit log and activity tracking
-- Client portal
+- Audit logging and activity tracking
+- Client portal support
 
 ---
 
@@ -40,7 +45,7 @@ Shipment items are tracked across original, loaded, transit, and in-stock operat
 
 ### Invoice Management
 
-Client and supplier invoice workflows with multi-currency totals, payment state, refund handling, and linked shipment data.
+Client and supplier invoice workflows with multi-currency totals, payment states, refunds, balances, and linked shipment data.
 
 ![Invoices](./assets/invoices.png)
 
@@ -59,14 +64,6 @@ Audit trail for operational and administrative actions across shipments, invoice
 Operational overview with shipment metrics, financial summaries, task visibility, charts, and recent activity.
 
 ![Dashboard](./assets/dashboard1.png)
-
----
-
-### Dashboard Analytics
-
-Role-aware dashboard widgets for monitoring shipment states, invoice status, revenue, and operational activity.
-
-![Dashboard Analytics](./assets/dashboard2.png)
 
 ---
 
@@ -96,36 +93,39 @@ Database-backed permission matrix that allows the super admin to configure what 
 
 ## Product Scope
 
-The app combines shipping operations, stock handling, invoicing, payments, refunds, tasks, audit logs, company settings, exchange rates, users, sessions, and access control into one internal platform.
+The platform combines shipping operations, stock handling, invoicing, payments, refunds, tasks, audit logs, exchange rates, user management, and access control into a single internal system.
 
-It is designed for companies that still depend on spreadsheets, WhatsApp, and manual coordination, but need a centralized system for daily operations.
+It is designed for companies that still depend on spreadsheets, manual coordination, and fragmented operational tooling, but need a centralized platform for day-to-day logistics and financial workflows.
 
 ---
 
-## What Makes It Different From Basic CRUD
+## Operational Workflows
 
-The app models real shipping-company workflows instead of treating everything as simple records.
+The platform is designed around operational shipping-company workflows, where imported inventory, loaded quantities, transit valuation, stock carry-forward, invoicing, and access governance are treated as connected operational states.
 
-- Original shipment items are separate from loaded items.
-- Transit valuation is separate from original shipment data.
-- Stock can be derived from leftover shipment quantities or entered manually.
-- Stock can be allocated into existing shipments or moved into loaded items.
-- Excel imports are previewed, validated, and reviewed before being applied.
-- Invoice totals are calculated from payments, refunds, exchange rates, discounts, and commissions.
-- User capabilities are controlled through a configurable permission matrix.
+Examples include:
+
+- Original shipment items remain separate from loaded inventory
+- Transit valuation is tracked independently from original shipment data
+- Stock can be derived from leftover shipment quantities or entered manually
+- Stock can be allocated into existing shipments or moved directly into loaded items
+- Embedded product/item images can be extracted from imported Excel files and linked to shipment items
+- Excel imports are previewed, validated, and reviewed before apply
+- Invoice totals are calculated from payments, refunds, exchange rates, discounts, and commissions
+- User capabilities are controlled through a configurable permission matrix
 
 ---
 
 ## Roles & Access Control
 
-The system supports four roles:
+The system supports four operational roles:
 
 - `SUPER_ADMIN`
 - `ADMIN`
 - `EMPLOYEE`
 - `CLIENT`
 
-The super admin can configure role capabilities through a persistent permission matrix. This allows one company to give employees broader operational control while another company can restrict them to specific workflows such as stock handling, imports, or shipment updates.
+The super admin can configure role capabilities through a persistent database-backed permission matrix. This allows different companies to adapt operational permissions to their own workflows, whether for shipment handling, stock operations, imports, invoicing, or administrative management.
 
 Client access is intentionally constrained and focused on shipment and invoice visibility.
 
@@ -165,10 +165,10 @@ The backend is organized around controllers, services, repositories, models, and
 
 The frontend is organized around route pages, domain components, API services, query hooks, shared layout, theming, and localization utilities.
 
-The project is built as a production-oriented internal operations system rather than a demo CRUD dashboard.
+The project is built as a production-oriented internal operations system focused on real-world logistics and financial workflows.
 
 ---
 
-## Status
+## About This Repository
 
 This repository is a showcase repository for a private shipping operations application.
