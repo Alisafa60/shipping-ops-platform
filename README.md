@@ -117,9 +117,9 @@ Examples include:
 - Transit valuation is tracked independently from original shipment data
 - Stock can be derived from leftover shipment quantities or entered manually
 - Stock can be allocated into existing shipments or moved directly into loaded items
-- Embedded product/item images can be extracted from imported Excel files and linked to shipment items
-- Excel imports are previewed, validated, and reviewed before apply
 - Shipment items can be imported from Excel files or created manually through operational workflows
+- Embedded product/item images can be extracted from imported Excel files and linked to shipment items
+- Excel imports are previewed, validated, and reviewed before being applied
 - Invoice totals are calculated from payments, refunds, exchange rates, discounts, and commissions
 - User capabilities are controlled through a configurable permission matrix
 
@@ -181,3 +181,7 @@ The project is built as a production-oriented internal operations system focused
 ## About This Repository
 
 This repository is a showcase repository for a private shipping operations application.
+
+The application is available for licensing, customization, or private deployment.
+
+For inquiries, contact: `alisafa6100 [at] gmail [dot] com`
