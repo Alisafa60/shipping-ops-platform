@@ -67,6 +67,14 @@ Operational overview with shipment metrics, financial summaries, task visibility
 
 ---
 
+### Dashboard Analytics
+
+Role-aware dashboard widgets for monitoring shipment states, invoice status, revenue, and operational activity.
+
+![Dashboard Analytics](./assets/dashboard2.png)
+
+---
+
 ### Shipment Management
 
 Shipment list with lifecycle statuses, invoice linkage, filtering, and operational actions.
@@ -111,6 +119,7 @@ Examples include:
 - Stock can be allocated into existing shipments or moved directly into loaded items
 - Embedded product/item images can be extracted from imported Excel files and linked to shipment items
 - Excel imports are previewed, validated, and reviewed before apply
+- Shipment items can be imported from Excel files or created manually through operational workflows
 - Invoice totals are calculated from payments, refunds, exchange rates, discounts, and commissions
 - User capabilities are controlled through a configurable permission matrix
 
